@@ -9,7 +9,7 @@
 		display: flex
 		align-items: center
 		justify-content: space-between
-		min-height: 80px
+ 
 	&__mobile, &__landline
 		text-align: right
 	&__phone
@@ -65,7 +65,7 @@
 	transition: 0.2s
 	transform: translateY(0)
 	&_active
-		transform: translateY(-100%)
+		transform: translateY(-200%)
 	ul
 		display: flex
 		justify-content: space-around
@@ -78,3 +78,22 @@
 			font-size: 17px
 			text-transform: uppercase
 			color: white
+
+/*Dedia*/
+@media (max-width: 991px)
+	.navbar
+		&__mobile, &__landline
+			display: none
+
+
+@media (max-width: 576px)
+	.logo
+		display: none
+	.menu
+		top: 60px
+		&-button
+			height: 60px
+		ul
+			flex-direction: column
+			.menu__item
+				margin-bottom: 20px
