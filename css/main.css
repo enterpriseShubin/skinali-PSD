@@ -118,11 +118,13 @@
           transition: 0.2s;
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
-          transform: translateY(0); }
+          transform: translateY(0);
+  opacity: 0; }
   .menu_active {
     -webkit-transform: translateY(-200%);
         -ms-transform: translateY(-200%);
-            transform: translateY(-200%); }
+            transform: translateY(-200%);
+    opacity: 1; }
   .menu ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -166,7 +168,8 @@
 .hero {
   background: url("../../img/interior-3575816_1920.jpg") no-repeat center;
   background-size: cover;
-  padding: 180px 0 270px 0; }
+  padding: 120px 0 270px 0;
+  margin-top: 80px; }
   .hero__title {
     font-size: 30px; }
   .hero__subtitle {
